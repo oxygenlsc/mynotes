@@ -117,3 +117,11 @@ saga需要你在yield后面放上一些合适的saga指令，如果放的是指�
 - apply指令：和call一样传参不一样
 
 - select指令：获取仓库里面的值
+
+- fork:  用于开启一个新的任务 该任务不会阻塞，该函数需要传递一个生成器函数
+
+- cancel:
+
+- cancelled:
+
+- race:
