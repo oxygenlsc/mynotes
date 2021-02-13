@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+       let reg = /\d+/g
+       let s  = '1234abc132basd';
+       console.log(s,reg.exec(s));
+       console.log(s,reg.exec(s));
+    </script> -->
+
+    <!-- <script>
+       let badWardArr = ['死','sb','傻逼','日你妈','鬼东西','哈麻批','妈'];
+       let testStr = '老子今天非把你个日你妈的傻逼打死，什么鬼东西，真他妈哈麻批';
+       function dealStr(badWardArr,testStr){
+           var reg = new RegExp(`(${badWardArr.join('|')})+`,'g') 
+           //采用贪婪匹配把连在一起的合并成一个****
+            let str =   testStr.replace(reg,'****')
+             return str
+       }
+       let res = dealStr(badWardArr,testStr)
+       console.log(res);
+    </script> -->
+
+    <script>
+
+// let str = '2020-12-1,2019-13-3,2018-4-8'
+// let reg = /(?<year>\d{4})-(?<mouth>\d{1,2})-(?<day>\d{1,2})/g
+
+// while(res = reg.exec(str)){
+//     console.log(res); 
+
+// }
+
+// let s = 'aaaaabbbbjdfcccc'
+// let reg = /(\w)\1+/g
+//  while(res = reg.exec(str)){
+//     console.log(res[1]); 
+
+// }
+
+// let s  = 'asdasdasda123asdas12asc123c123'
+// //找到后面是数字的字母
+// let reg = /[a-zA-Z](?=\d+)/g
+//  while(res = reg.exec(s)){
+//     console.log(res); 
+
+// }
+
+// let s = '12323441';
+// // 规则从右向左每三位加上一个逗号
+// //  得到结果var  res = '12,323,441' 
+// var reg = /\B(?=(\d{3})+$)/g //就是匹配一个空字符 空字符后面出现3的倍数次的结果然后替换掉这个空字符位，
+// s=s.replace(reg,',')
+// console.log(s);
+
+
+
+    // function inherit(son,father){
+    //     son.prototype = Object.create(father.prototype);
+    //     son.prototype.constructor = son;
+    //     son.uber = father.prototype;
+    // }
+
+    // function inherit(son,father){
+    //     var Temp = function() {};
+    //     Temp.prototype = father.prototype;
+    //     son.prototype = new Temp();
+    //     son.constructor = son;
+    //     son.uber = father.prototype;
+    // }
+    // // 上面的优化
+    // var  inherit = (function(){
+    //     var Temp = function(){};
+    //     return function(son,father){
+    //         Temp.prototype = father.prototype;
+    //         son.prototype = new Temp();
+    //         son.constructor = son;
+    //         son.uber = father.prototype;
+    //     }
+    // }());
+
+// var obj = {};
+// Object.defineProperty(obj,'x',{
+//     get:function(){
+//             //当读取属性x时运行的函数
+//             //该函数的返回值会作为属性值
+
+//     },
+//     set:function(val){
+//         // 当给x属性赋值时运行这个函数val是赋的值
+//     }
+// })
+
+        function curry(){
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘制点</title>
+</head>
+<body>
+    <canvas width="500" height="500" id="oCanvas"></canvas>
+        <!-- 初始化作色器 -->
+        <!-- 顶点着色器：用来描述顶点特征的程序 -->
+        <!-- 片元着色器：进行逐片元处理过程如光照的程序 -->
+        <!-- attribute 存储限定符 vec4 类型 a_Position 变量名; -->
+        <!-- uniform vec4 u_FragColor 同上 -->
+    <!-- 顶点着色器写的地方 -->
+        <!-- vec4 gl_Position 必须被赋值  float gl_PointSize 不必须赋值默认为1.0 是2个内置变量 -->
+    <script type="notjs" id= 'vertex'>
+        attribute vec2 a_position;
+        attribute vec4 a_color;
+        uniform vec2 screenSize;
+        varying vec4 v_color;
+       void main () {
+           float x = a_position.x * 2.0/screenSize.x - 1.0;
+           float y = 1.0- a_position.y*2.0/screenSize.y;
+           gl_Position = vec4(x,y,0,1);
+           gl_PointSize = 10.0 ;
+           v_color = a_color;
+       }
+    </script>
+     <!-- gl_FragColor 也是一个内置变量 vec4的  相当于rgba-->
+     <!-- 添加精度 highp mediump lowp -->
+    <script type="notjs" id= 'fragement'>
+        precision mediump float;
+        varying vec4 v_color;
+        void main () {
+          gl_FragColor = v_color;
+        }
+     </script>
+    <script>
+        var oCanvas = document.getElementById('oCanvas');
+        var gl = oCanvas.getContext('webgl');//获取上下文webgl的
+        if(!gl){
+            alert('浏览器不支持WebGL');
+        }
+        // type 有2中类型 gl.VERTEX_SHADER(顶点)/gl.FRAGMENT_SHADER(片元);
+        //创建着色器
+         function createShader(gl,type,source){
+            var shader = gl.createShader(type);
+            gl.shaderSource(shader,source)
+            //变异着色器代码
+            gl.compileShader(shader)
+            var success =  gl.getShaderParameter(shader,gl.COMPILE_STATUS);
+            console.log(success);
+            if(success){
+                return shader;
+            }
+            console.log(gl.getShaderInfoLog(shader));
+         }
+         var vetexStr = document.getElementById('vertex').innerText
+         var fragmentStr = document.getElementById('fragement').innerText
+         var vetexShader = createShader(gl,gl.VERTEX_SHADER,vetexStr)
+         var fragmentShader = createShader(gl,gl.FRAGMENT_SHADER,fragmentStr)
+        //  连接程序
+        function createProgram(gl,vertexShader,fragmentShader){
+              var program = gl.createProgram();//创建一个空的程序
+              gl.attachShader(program,vertexShader);//绑定着色器 参数1被插入的程序 2 要绑定的着色器
+              gl.attachShader(program,fragmentShader);//绑定着色器 参数1被插入的程序 2 要绑定的着色器
+              gl.linkProgram(program);
+              var success =  gl.getProgramParameter(program,gl.LINK_STATUS);
+            if(success){
+                return program;
+            }
+             console.log(success)
+        }
+
+        var program = createProgram(gl,vetexShader,fragmentShader);
+        gl.useProgram(program);
+
+      
+        var a_position = gl.getAttribLocation(program,'a_position');
+        var screenSize = gl.getUniformLocation(program,'screenSize');
+        var a_color = gl.getAttribLocation(program,'a_color');
+        gl.uniform2f(screenSize,oCanvas.width,oCanvas.height);
+        //像变量里面赋值 gl.vertexAttrib3f(location.v0,v1,v2) 3f 3是个数 f代表float类型
+        function bindEvent(){
+            var points = []
+                oCanvas.onmousemove = function(e){
+                    var x = e.offsetX;
+                    var y = e.offsetY;
+                    var color = randomColor()
+                    points.push({
+                        x,
+                        y,
+                        color
+                    })
+                            gl.clearColor(0,0,1,1);
+                            gl.clear(gl.COLOR_BUFFER_BIT);
+                    for (let index = 0; index < points.length; index++) {
+                        const el = points[index];
+                        var icolor = el.color;
+                       
+                        gl.vertexAttrib3f(a_position,el.x,el.y,0.0);
+                        gl.vertexAttrib4f(a_color,icolor.r,icolor.g,icolor.b,icolor.a);
+                        gl.drawArrays(gl.POINTS,0,1);
+                        
+                    }
+                   
+                }
+        }
+
+        function randomColor(){
+            var r = Math.random();
+            var g = Math.random();
+            var b = Math.random();
+            var a = 0.5+Math.random()*0.5;
+
+            return {
+                r,
+                g,
+                b,
+                a
+            }
+        }
+        // gl.drawArrays(mode,frist,count)
+        // mode 指定绘制的方式，可以接受以下常量符号：gl.POINTS,gl.LINES,gl.LINES_STRIP,gl.LINE_LOOP,gl.TRIANGLES,gl.TRIANGLE_STRIP,gl.TRIANGLE_FAN
+        // first 指定从那个顶点开始绘制（int）
+        // count 指定绘制需要用到多少个顶点（int）
+        // 返回值无
+        bindEvent()
+    </script>
+</body>
+</html>

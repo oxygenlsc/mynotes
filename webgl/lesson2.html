@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘制3角</title>
+</head>
+<body>
+    <canvas width="500" height="500" id="oCanvas"></canvas>
+    <script type="notjs" id= 'vertex'>
+        attribute vec2 a_position;
+        attribute vec4 a_color;
+        uniform vec2 screenSize;
+        varying vec4 v_color;
+        attribute float a_psize;
+        void main () {
+           float x = a_position.x * 2.0/screenSize.x - 1.0;
+           float y = 1.0- a_position.y*2.0/screenSize.y;
+           gl_Position = vec4(x,y,0,1);
+           gl_PointSize = a_psize ;
+           v_color = a_color;
+       }
+    </script>
+    <script type="notjs" id= 'fragement'>
+        precision mediump float;
+        varying vec4 v_color;
+        void main () {
+          gl_FragColor = v_color;
+        }
+     </script>
+    <script>
+        var oCanvas = document.getElementById('oCanvas');
+        var gl = oCanvas.getContext('webgl');//获取上下文webgl的
+        if(!gl){
+            alert('浏览器不支持WebGL');
+        }
+        // type 有2中类型 gl.VERTEX_SHADER(顶点)/gl.FRAGMENT_SHADER(片元);
+        //创建着色器
+         function createShader(gl,type,source){
+            var shader = gl.createShader(type);
+            gl.shaderSource(shader,source)
+            //变异着色器代码
+            gl.compileShader(shader)
+            var success =  gl.getShaderParameter(shader,gl.COMPILE_STATUS);
+            console.log(success);
+            if(success){
+                return shader;
+            }
+            console.log(gl.getShaderInfoLog(shader));
+         }
+         var vetexStr = document.getElementById('vertex').innerText
+         var fragmentStr = document.getElementById('fragement').innerText
+         var vetexShader = createShader(gl,gl.VERTEX_SHADER,vetexStr)
+         var fragmentShader = createShader(gl,gl.FRAGMENT_SHADER,fragmentStr)
+        //  连接程序
+        function createProgram(gl,vertexShader,fragmentShader){
+              var program = gl.createProgram();//创建一个空的程序
+              gl.attachShader(program,vertexShader);//绑定着色器 参数1被插入的程序 2 要绑定的着色器
+              gl.attachShader(program,fragmentShader);//绑定着色器 参数1被插入的程序 2 要绑定的着色器
+              gl.linkProgram(program);
+              var success =  gl.getProgramParameter(program,gl.LINK_STATUS);
+            if(success){
+                return program;
+            }
+             console.log(success)
+        }
+
+        var program = createProgram(gl,vetexShader,fragmentShader);
+        gl.useProgram(program);
+
+      
+        var a_position = gl.getAttribLocation(program,'a_position');
+        var a_pointsize = gl.getAttribLocation(program,'a_psize');
+
+        var screenSize = gl.getUniformLocation(program,'screenSize');
+        var a_color = gl.getAttribLocation(program,'a_color');
+        gl.uniform2f(screenSize,oCanvas.width,oCanvas.height);
+        gl.vertexAttrib4f(a_color,1,0,4*3,1);
+        //像变量里面赋值 gl.vertexAttrib3f(location.v0,v1,v2) 3f 3是个数 f代表float类型
+        var positionBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+        
+        function bindEvent(){
+            var points = []
+                oCanvas.onmousedown = function(e){
+                    var x = e.offsetX;
+                    var y = e.offsetY;
+                    // var color = randomColor()
+                    points.push(x,y,3.0);
+                    if(points.length % 3 == 0){
+                        gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(points),gl.STATIC_DRAW);
+                        gl.vertexAttribPointer(a_position,2,gl.FLOAT,false,4*3,0);
+                        gl.vertexAttribPointer(a_pointsize,1,gl.FLOAT,false,4*3,2*4);
+                        gl.enableVertexAttribArray(a_position);
+                        gl.enableVertexAttribArray(a_pointsize);
+                        // gl.drawArrays(gl.TRIANGLES,0,points.length / 3); 三角
+                        // gl.drawArrays(gl.LINES,0,points.length / 3); 线
+                        // gl.drawArrays(gl.LINE_STRIP,0,points.length / 3);// 连着的线 
+
+                        gl.drawArrays(gl.LINE_LOOP,0,points.length / 3); //回路
+
+                    }      
+                }
+        }
+
+        bindEvent()
+    </script>
+</body>
+</html>
