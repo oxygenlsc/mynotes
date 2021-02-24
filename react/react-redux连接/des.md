@@ -17,3 +17,15 @@ react-redux ：连接redux和react的
     - connect的第2个参数是一个函数返回一个对象 对象里面是函数对应组件里面的事件函数
     也可以传一个对象对象里面是action创建函数 一般不用不灵活
 原理就是将仓库中的数据放到上下文中 页面刷新的store.subscribr 添加了监听器仓库数据改变就触发这个然后改仓库的数据实现页面刷新
+
+connect第3个参数 mergeProps 是一个函数 有3个参数
+- stateProps 参数1  该参数的值来自于connect第一个参数返回的值
+- dispatchProps 参数2 该参数的值来自于connect第二个参数返回的值
+- ownProps 参数3 组件使用者传递的信息
+- 返回值：一个对象，该对象的属性最终会被传递到包装的组件中
+
+connect第4个参数 是一个配置对象 是一个对象
+
+
+# redux如何和router结合
+## 第3方库（connected-react-router）
