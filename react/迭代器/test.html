@@ -36,8 +36,9 @@
         //下面的函数是一个生成器函数，用于创建生成器
         function* createGenterator(){
             console.log('调用了生成器函数，生成器函数的函数体-开始');
-            yield 1;
+            let arg  =   yield 1;
             console.log('调用了生成器函数，生成器函数的函数体-运行1');
+            console.log(arg,'arg');
             yield 2;
             console.log('调用了生成器函数，生成器函数的函数体-运行2');
             yield 3;
