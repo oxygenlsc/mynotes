@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //单例模式实现
+        // function Test (name){
+        // // new 的过程      
+        // // var this = Object.create(Test.prototype)
+        // // return this
+        //     if(Test.instance){
+        //         return Test.instance;
+        //     }
+        //     this.name = name 
+        //     Test.instance = this;
+        //     //这样是实现了单例模式，但是不符合开闭原则，把this暴露在了全局
+        // }
+        // var a = new Test('one');
+        // var b = new Test();
+        // console.log(a===b);
+
+        // function Test(name){
+        //     var instance = this;
+        //     this.name = name;
+        //     Test = function(){
+        //         return instance;
+        //     }
+        // }
+        //这样写也不好
+
+
+        var Test  = (function(){
+            var instance;
+            return function(name){
+                if(typeof instance =='object'){
+                    return instance
+                }
+                instance = this;
+                this.name = name
+            }
+        })
+        //利用闭包实现单例模式s
+        var getSingle  =  function(func){
+            var result;
+            return function(){
+                if(!result){
+                    result = func.apply(this,arguments);
+                }
+                return result;
+            }
+        }
+
+    </script>
+</body>
+</html>
