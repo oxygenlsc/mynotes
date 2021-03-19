@@ -1,0 +1,10 @@
+div.button-wrap{
+    position: absolute;
+    width: 600px;
+    top: 400px;
+}
+
+div.button-wrap a{
+   color:'red';
+   background: pink; 
+}
