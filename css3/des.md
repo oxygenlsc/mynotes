@@ -100,3 +100,10 @@ border-image-source:url(),也可以写渐变色 linear-gradient()
 border-image-slice:10
 
 # background ~~
+
+
+# text ~~
+
+1. text-shadow  x y blur color
+
+
