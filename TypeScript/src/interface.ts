@@ -32,6 +32,7 @@ function sum(numbers:number[],callBack:Conditions){
     return s
 }
 
+//接口继承
 interface A {
     T1:string
 }
@@ -43,3 +44,19 @@ let dd:B = {
     T1:'s',
     T2:1
 }
+
+//类型别名继承
+
+type C = {
+    T1:number
+}
+
+type D = {
+    readonly T2:number
+} & C
+
+let g:D = {
+    T1:2,
+    T2:1
+}
+g.T2 = 1
