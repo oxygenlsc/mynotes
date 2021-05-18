@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <img v-bind:src="imgs" alt="">
+        {{title}}
+
+    </div>
+    <script src='./vue.js'></script>
+    <script>
+        var vm = new Vue({
+            el:'#root',
+            data:{
+                imgs:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fa.ksbbs.com%2Fthumb%2FMon_1609%2F115_277047_e9916a32d27f871.jpg%3F134&refer=http%3A%2F%2Fa.ksbbs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623401496&t=f66adbee0f2d1961d8f1dec022837783',
+                title:'dddd'
+            }
+        })
+        // vm.$mount('#root')
+    </script>
+</body>
+</html>

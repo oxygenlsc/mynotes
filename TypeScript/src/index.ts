@@ -1,99 +1,71 @@
-abstract class animals {
-        abstract type:string;
-        constructor(
-          public  name:string,
-          public  age:number
-        ){
+// function test(str:string){
+//    return function(target:new (...args:any[]) => object){
 
-        }
-        sayHello(){
-            console.log(`my name is ${this.name} my type is ${this.type}`)
-        }
-}
+import { classDescriptor, printObj, propDescriptor } from "./Descriptor";
 
-// class Lion extends animals {
-//     type: string = '狮子'
-
-//     singleFire(){
-//         console.log(`${this.name} 穿越了单火圈`);
-//     }
-//     DeFire(){
-//         console.log(`${this.name} 穿越了双火圈`);
-//     }
-    
+//    }
 // }
-// class Tiger extends animals {
-//     type: string = '老虎'
-//     singleFire(){
-//         console.log(`${this.name} 穿越了单火圈`);
-//     }
-//     DeFire(){
-//         console.log(`${this.name} 穿越了双火圈`);
-//     }
-// }
-// class Monkey extends animals {
-//     type: string = '猴子'
-//     zougangsi(){
-//         console.log(`${this.name} 走钢丝`);
-//     }
-// }
-// class Dog extends animals {
-//     type: string = '狗'
 
-//     jiao(){
-//         console.log(`${this.name} 叫了`);
+// @test('这是一个类')
+// class User {
+//     // loginid:string; //必须是3到5个字符
+//     loginPwd:string;//必须是6到12个字符
+//     age:number;//必须是数字，必须是0到100的数字
+//     gender:"男" | '女'
+
+//     constructor(public loginid:string){
+
 //     }
-    
 // }
 
 
-interface  IFireShow {
-    singleFire():void
-    doubleFire():void
-}
+// //多个装饰器
 
-interface WisdomShow {
-    jiao():void
-}
-
-interface BalanceShow {
-    zougangsi():void
-}
-class Lion extends animals implements IFireShow {
+// type constructor = new (...args:any[]) => object
+// function d1(target:constructor){
    
-    type: string = '狮子'
+//  }
+// function d2(target:constructor){
 
-    singleFire(){
-        console.log(`${this.name} 穿越了单火圈`);
-    }   
-    doubleFire(): void {
-        throw new Error("Method not implemented.");
-    } 
-}
-class Tiger extends animals  implements IFireShow{
-   
-    type: string = '老虎'
-    singleFire(){
-        console.log(`${this.name} 穿越了单火圈`);
-    }
-    doubleFire(): void {
-        throw new Error("Method not implemented.");
-    }
-}
-class Monkey extends animals implements BalanceShow , WisdomShow{
-    jiao(): void {
-        throw new Error("Method not implemented.");
-    }
-    zougangsi(): void {
-        throw new Error("Method not implemented.");
-    }
-    type: string = '猴子'
-}
-class Dog extends animals implements WisdomShow {
-    type: string = '狗'
+// }
 
-    jiao(){
-        console.log(`${this.name} 叫了`);
-    }
+// function d(target:any,key:string){
+//     console.log(target,key);
     
+// }
+// function dm(){
+//     return function(target:any,key:string,descriptor:PropertyDescriptor){
+//         descriptor.enumerable = true//这个方法可以产于遍历
+//     }
+// }
+//  @d1
+//  @d2
+//  class User {
+//      // loginid:string; //必须是3到5个字符
+//      loginPwd:string;//必须是6到12个字符
+//      @d
+//      age:number;//必须是数字，必须是0到100的数字
+//      @d
+//      gender:"男" | '女'
+ 
+//      constructor(public loginid:string){
+ 
+//      }
+
+//      @dm()
+//      method1(){
+
+//      }
+//  }
+ 
+@classDescriptor('用户')
+class User {
+    @propDescriptor('账号')
+    loginId: string
+    @propDescriptor('密码')
+    loginPwd: string
 }
+
+const u = new  User();
+
+printObj(u);

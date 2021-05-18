@@ -1,5 +1,6 @@
 {
-  "compilerOptions": { //这个配置是编译选项的默认值
+  "compilerOptions": {
+    "experimentalDecorators": true, //这个配置是编译选项的默认值
     "target": "ES2016",//变异成js代码时使用的是什么标准  es3 ...
     "module": "commonjs",//配置编译目标使用的模块化标准
     "lib" :["ES2016"],
@@ -7,7 +8,7 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "strictPropertyInitialization": true
+    // "strictPropertyInitialization": true
   },
   "include": ["./src"],//表示要编译的文件夹
   // "files":["./src/index.ts"]//表示编译指定文件
