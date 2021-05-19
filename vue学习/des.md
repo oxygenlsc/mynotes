@@ -97,3 +97,63 @@ to跳转的方法
 导航 选中类 会给你添加  router-link-active router-link-exact-active
 
 命名路由
+
+# 在vue-cli搭建的项目中使用css module
+
+需要将样式文件命名为 xxx.module.ooo
+
+# 得到组件渲染的Dom
+//得到组件生成的根dom
+function getComponentRootDom(comp,props){
+  const vm = new Vue({
+    render:(h)=>h(comp,{props}),
+  });
+  vm.$mount();
+  return vm.$el
+}
+# 实例里面的 $el 表示渲染出来得到的真实dom
+
+##  像实例注入成员
+
+Vue.prototype.sayHello = function(){
+
+}
+//这样的话全局所有的实例都有这个方法了
+
+## ref
+
+实例里面的 $refs 可以用于存储你所写的ref元素
+
+## 远程获取数据的意义
+
+# axios 的使用 
+
+安装axios  yarn  add axios
+
+# 生命周期函数
+``` export default {
+beforeCreate(){
+  console.log('第一个周期函数，实例被创建之后，被注入之前');
+},
+created(){
+  console.log('第二个周期函数，实例被注入之后，生成vnode之前');
+},
+beforeMount(){
+  console.log('第三个周期函数，实例生成VNode之后，生成真实dom之前');
+},
+mounted(){
+  console.log('第四个周期函数，实例生成真实dom之后，挂载真实dom之前');
+},
+beforeUpdate(){
+  console.log('第五个周期函数,已挂载和从新渲染之间运行');
+},
+updated(){
+  console.log('第六个周期函数，从新渲染和已挂载之间运行');
+},
+beforeDestroy(){
+  console.log('第七个周期函数，挂载真实dom之后，销毁组件之前');
+},
+destroyed(){
+  console.log('第八个周期函数，销毁组件之后，已销毁组件之前');
+}
+} ```
