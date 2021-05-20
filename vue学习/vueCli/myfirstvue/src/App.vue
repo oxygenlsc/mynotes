@@ -56,5 +56,10 @@ export default {
     width: 250px;
     height: 100%;
   }
+  .main{
+    width: 100%;
+    height: 100%;
+    
+  }
 }
 </style>
