@@ -156,4 +156,35 @@ beforeDestroy(){
 destroyed(){
   console.log('第八个周期函数，销毁组件之后，已销毁组件之前');
 }
-} ```
+} 
+```
+ # 自定义指令
+
+ 1. 全局定义
+
+ 2. 局部定义
+
+ directives:{
+   
+ }
+
+ # 混入  提取共同的代码
+ 通过 mixins:[common]
+
+ # 递归组件
+ 在组件内部进行自我递归
+ 在组件内部写个name：“”
+
+ 就可以通过name使用自己
+
+
+ # 动态路由
+ export default [
+    {name:'Blog',path:'/blog:id', component:Blog},
+  ]
+  :后面加名字
+
+  router插件，会在vue的原型上会注入一些东西
+
+  this.$route  $route提供路由信息
+  可以通过他里面的params拿到连接上id的值

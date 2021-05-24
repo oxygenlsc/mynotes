@@ -1,5 +1,6 @@
 <template>
-  <div class="home-container" ref="home" @wheel="handleWheel">
+  <div class="home-container" v-loading='isLoading' ref="home" @wheel="handleWheel">
+    <!-- <Loading v-if="isLoading" /> -->
     <ul
       class="msg-move-container"
       ref="msgBox"
@@ -39,13 +40,16 @@
 import { getBanner } from "../../api/banner";
 import ShowMsgItem from "./ShowMsgItem";
 import Icon from "../../components/Icon";
+import fetchData from '@/mixins/fetchData'
 export default {
+  mixins:[fetchData([])],
   data() {
     return {
-      banners: [],
+      // banners: [],
       index: 0,
       containerHeight: 0,
       swtching: false,
+      // isLoading:true,
     };
   },
   components: {
@@ -78,11 +82,14 @@ export default {
     handleResize() {
       this.containerHeight = this.$refs.home.clientHeight;
     },
+    async fetchData(){
+      return await getBanner()
+    }
   },
-  async created() {
-    const r = await getBanner();
-    this.banners = r;
-  },
+  // async created() {
+  //   this.banners =  await getBanner();
+  //   this.isLoading = false;
+  // },
 
   mounted() {
     //直接操作dom就要在这个里面操作了
