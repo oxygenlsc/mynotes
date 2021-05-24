@@ -188,3 +188,87 @@ destroyed(){
 
   this.$route  $route提供路由信息
   可以通过他里面的params拿到连接上id的值
+
+
+  # vue-router 提供了 $router
+
+用于控制页面跳转
+
+# watch  用于观察数据的变化
+
+watch:{
+    数据name(新值，旧值){
+        变化后你要做的事
+    }//简写
+    数据name:{
+        hander(新值，旧值){},
+        deep:false,//是否监听该数据内部的属性变化，默认false
+        immediate:false//是否立即执行一次hander，默认false
+    }
+    数据name['属性name'](){
+        //数据某个属性的变化监控
+    }
+}
+
+# v-html 
+就是设置内部为html 不会被转换为文本
+
+# $listeners  v-model
+
+$listeners 是vue的实例的属性，它用于获取父组件传过来的所有事件函数 ,这样就可以直接运行函数不用$emit  直接拿到函数调用结果。
+
+  # 事件总线
+  1. 提供监听某个事件的接口
+  2. 提供取消监听的接口
+  3. 触发事件的接口（可传递数据）
+  4. 触发事件后会自动通知监听者
+
+  //事件总线就是一个对象可以对事件监听取消触发
+
+  所以在vue中就是直接 new vue() 对象 它自带 $on $off
+   $emit 方法
+   一般直接在main.js上 在vue的peototype 添加一个$bus属性来保存vue实例
+
+  # 数据共享  vuex
+
+  安装
+
+   yarn  add vuex
+
+   使用vuex 后  会在实例中添加一个$store对象
+
+   就可以使用了
+
+   数据的变更
+
+   mutation  通过它来更改数据不要直接改
+
+   store.commit('power',2) //通过commit来提交方法改变数据
+
+   mutation 中不允许出现异步的操作
+
+   提交 mutation 是改变仓库的唯一方法
+
+   action 可以处理副作用然后改变值
+
+   action 使用dispatch来触发
+
+   # router and vuex
+
+   vuex中模块化
+
+   开启入namespaced
+
+   getters：配置 就是相当于组件中的计算属性
+
+   vuex 提供了一些辅助函数,以减少代码书写  自己查文档
+
+   1. mapState
+# 路由 导航前置守卫
+
+router.beforeEach(){
+
+}
+# vue 实例 this.$watch(监控数据，回调函数)
+用来监控的 和watch一样
+vuex 里面也有watch
