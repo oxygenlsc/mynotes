@@ -8,15 +8,20 @@
 </head>
 <body>
     <div>
-        <span>1</span>
-        <br>
-        <span>2</span>
-        <br>
-        <span>3</span>
-        <br>
-        <span>4</span>
-        <br>
-        <span>5</span>
+       
     </div>
+    <script>
+        let  a = 1;
+        console.log(a)
+        {
+            (function(i){
+                a = undefined
+                console.log(i)
+            })(a)
+        }
+        console.log(a)
+
+    </script>
+    
 </body>
 </html>
