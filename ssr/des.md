@@ -36,3 +36,22 @@ npm-run-all ：把所有命令一起运行 先安装  npm i -D npm-run-all
 
 6. 重新配置`package.json`
 7. 渲染页面组件的内容到`div`中
+
+# three 
+
+ReactDOM.hydrate(<App/>,document.getElementById('root'))
+hydrate 代表注水
+
+合并webpack配置（提取公共的）
+
+webpack-merge
+
+安装clean-webpack-plugin 用于清除上次打包结果
+
+# four
+1. 利用webpack生成样式文件
+2. 在页面源代码中加入link元素，链接道样式文件
+> 下载2个 关于样式的工具 npm i -D  mini-css-extract-plugin  css-loader
+
+给服务端生成 同构的css代码
+isomorphic-style-loader
