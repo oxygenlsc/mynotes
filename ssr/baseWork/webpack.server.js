@@ -6,7 +6,8 @@ const ServeConfig = {
     // devtool:"none",
     entry:"./src/server",
     output:{
-        filename:"server.js"
+        filename:"server.js",
+        publicPath:"/"
     },
     target:'node',
     // externals:[nodeExternals()],
@@ -14,7 +15,15 @@ const ServeConfig = {
         rules:[  {
           test: /\.css$/,
           use: ["isomorphic-style-loader", "css-loader?modules"]
-        },]
+        },
+        {test:/\.(png)|(jpg)|(gif)$/,use:[{
+            loader:"file-loader",
+            options:{
+                name:"img/[name].[hash:5].[ext]",
+                emitFile:false
+            }
+        }]}
+    ]
     }
 }
 module.exports = merge(baseConfig,ServeConfig)

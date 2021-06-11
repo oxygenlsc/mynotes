@@ -1,6 +1,9 @@
 import React from 'react';
-import Home from "../pages/Home"
-// import "../assets/global.css"
-export default()=>{
-    return <Home/>
+import {StaticRouter} from 'react-router-dom'
+import "../assets/global.css"
+import RouteApp from "@/routes/RouteApp"
+export default({location,context})=>{
+    return <StaticRouter location={location} context={context}>
+            <RouteApp/>
+          </StaticRouter>
 }

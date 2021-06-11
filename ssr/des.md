@@ -55,3 +55,23 @@ webpack-merge
 
 给服务端生成 同构的css代码
 isomorphic-style-loader
+
+# five 
+1. 搞得图片
+
+1. 客户端负责生成文件
+
+2. 服务器保证图片路径一致
+
+npm i -D file-loader
+
+# six 使用路由
+
+安装 npm i react-router-dom
+
+服务端使用 StaticRouter  通过它的location来给地址
+
+# seven 使用路由配置
+利用第3放库  react-router-config
+
+# 多级路由处理
