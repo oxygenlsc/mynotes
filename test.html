@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [1,2,4,4,3,5]
+        // function findTopSum(arr,k,m){
+        //     let tempSet = new Set(arr);
+        //     let newArr = Array.from(tempSet);
+        //     newArr = newArr.sort((a,b)=>a-b);
+        //     return newArr[newArr.length-k]+newArr[newArr.length-m];
+        // }
+        // console.log(findTopSum(arr,2,4));
+
+        function adjoin(arr,condition){
+            let tempArr = [];
+            let childArr = [];
+            let tempObj = {};
+            for (let i = 0; i < arr.length; i++) {
+                let el = arr[i];
+                if(condition(el)){
+                    childArr.push(el);
+                }else{
+                    if(childArr.length>0){
+                        tempArr.push(childArr)
+                    }
+                    tempArr.push(el);
+                    childArr = []
+                }
+            }
+            if(childArr.length>0){
+                tempArr.push(childArr)
+            }
+            return tempArr;
+        }
+        console.log(adjoin([1,2,3,4,5],item=>item<3));
+    </script>
+</body>
+</html>

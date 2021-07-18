@@ -1,0 +1,60 @@
+2021-07-18 15:24:26,913 ERROR 17548 [-/127.0.0.1/-/5ms GET /] nodejs.TypeError: Cannot read property 'post' of undefined
+    at HomeController.index (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:6:24)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 17548
+hostname: DESKTOP-5A05RRV
+
+2021-07-18 15:25:42,334 ERROR 8060 [-/127.0.0.1/-/6ms GET /] nodejs.TypeError: Cannot read property 'get' of undefined
+    at HomeController.index (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:6:24)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 8060
+hostname: DESKTOP-5A05RRV
+
+2021-07-18 15:26:25,636 ERROR 8868 [-/127.0.0.1/-/6ms GET /] nodejs.TypeError: Cannot read property 'get' of undefined
+    at HomeController.index (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:6:24)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 8868
+hostname: DESKTOP-5A05RRV
+
+2021-07-18 19:22:03,868 ERROR 16684 [-/127.0.0.1/-/5ms GET /move] nodejs.ReferenceError: fsee is not defined
+    at MoveController.index (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\move.js:9:9)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 16684
+hostname: DESKTOP-5A05RRV
+

@@ -1,0 +1,288 @@
+{
+  "keys": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+  "view": {
+    "cache": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view\\config\\config.local.js",
+    "mapping": {
+      ".ejs": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+      ".html": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js"
+    },
+    "defaultViewEngine": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+    "defaultExtension": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+    "root": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "$apiBase": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+  "middleware": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+  "mymid": {
+    "a": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js",
+    "b": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "ipExceptionList": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "allowArrayField": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js",
+      "disable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "ejs": {
+    "root": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "cache": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view-ejs\\config\\config.local.js",
+    "debug": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "compileDebug": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "delimiter": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "strict": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg-view-ejs\\config\\config.default.js"
+  },
+  "env": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "name": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "version": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "description": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "main": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "dependencies": {
+      "axios": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "egg": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-ejs": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "fs-extra": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "test": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "dev": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "license": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "baseDir": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "strict": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "depth": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "env": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "level": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "logging": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "port": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+}
