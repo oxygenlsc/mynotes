@@ -182,10 +182,13 @@
     "main": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "axios": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "canvas": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "echarts": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
       "egg": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
       "egg-bin": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
       "egg-view-ejs": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
-      "fs-extra": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
+      "fs-extra": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
+      "jsdom": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\node_modules\\egg\\config\\config.default.js",
     "scripts": {

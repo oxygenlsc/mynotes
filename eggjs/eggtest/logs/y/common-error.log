@@ -94,3 +94,180 @@ hostname: DESKTOP-5A05RRV
 pid: 16684
 hostname: DESKTOP-5A05RRV
 
+2021-08-04 23:12:32,855 ERROR 12692 [-/::1/-/10ms GET /charts] nodejs.ReferenceError: chart is not defined
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:16:9)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 12692
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:12:55,294 ERROR 9904 [-/::1/-/10ms GET /charts] nodejs.ReferenceError: chart is not defined
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:16:9)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 9904
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:14:43,936 ERROR 8012 [-/::1/-/13ms GET /charts] nodejs.ReferenceError: F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\view\home.ejs:6
+    4|     <meta charset="UTF-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ >> 6|     <title><%= title %></title>
+    7| </head>
+    8| <body>
+    9|     <h1><%= title %></h1>
+
+title is not defined
+    4|     <meta charset="UTF-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ >> 6|     <title><%= title %></title>
+    7| </head>
+    8| <body>
+    9|     <h1><%= title %></h1>
+
+title is not defined
+    at eval (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\view\home.ejs:10:26)
+    at home (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\ejs\lib\ejs.js:682:17)
+    at tryHandleCache (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\ejs\lib\ejs.js:254:36)
+    at Object.exports.renderFile (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\ejs\lib\ejs.js:485:10)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-view-ejs\lib\view.js:15:12)
+    at EjsView.render (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-view-ejs\lib\view.js:28:36)
+    at ContextView.[contextView#render] (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-view\lib\context_view.js:70:23)
+    at async HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:8)
+path: "F:\\前端学习\\git笔记\\mynotes\\eggjs\\eggtest\\app\\view\\home.ejs"
+pid: 8012
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:14:59,857 ERROR 19256 [-/::1/-/12ms GET /charts] nodejs.ReferenceError: chart is not defined
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:16:9)
+    at async F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\middleware\mymid.js:5:9
+    at async F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-bodyparser\index.js:95:5)
+    at async F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-static-cache\index.js:41:56
+
+pid: 19256
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:23:24,735 ERROR 4392 [-/::1/-/2ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:14:81)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 4392
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:25:23,682 ERROR 10264 [-/::1/-/11ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 10264
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:25:34,942 ERROR 15312 [-/::1/-/9ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 15312
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:25:35,844 ERROR 15312 [-/::1/-/3ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 15312
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:27:19,965 ERROR 3740 [-/::1/-/9ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 3740
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:27:43,068 ERROR 14664 [-/::1/-/9ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 14664
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:27:43,628 ERROR 14664 [-/::1/-/3ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 14664
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:27:44,074 ERROR 14664 [-/::1/-/2ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 14664
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:27:44,395 ERROR 14664 [-/::1/-/2ms GET /charts] nodejs.TypeError: Cannot read property 'outerHTML' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:15:65)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 14664
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:37:55,126 ERROR 11180 [-/::1/-/10ms GET /charts] nodejs.TypeError: Cannot read property 'toDataURL' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:16:49)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 11180
+hostname: DESKTOP-5A05RRV
+
+2021-08-04 23:38:35,614 ERROR 13896 [-/::1/-/26ms GET /charts] nodejs.TypeError: Cannot read property 'toDataURL' of null
+    at HomeController.charts (F:\前端学习\git笔记\mynotes\eggjs\eggtest\app\controller\home.js:17:49)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at next (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:45:18)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:44:32)
+    at F:\前端学习\git笔记\mynotes\eggjs\eggtest\node_modules\koa-compose\index.js:36:12
+
+pid: 13896
+hostname: DESKTOP-5A05RRV
+
